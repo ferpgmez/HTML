@@ -1,0 +1,53 @@
+Si te refieres a que el texto de <figcaption> aparezca superpuesto sobre la imagen, normalmente se hace posicionando el <figure> de forma relativa y el <figcaption> de forma absoluta.
+
+<figure class="foto">
+    <img src="paisaje.jpg" alt="Paisaje">
+    <figcaption>Atardecer en la montaña</figcaption>
+</figure>
+
+
+class
+
+.foto {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+}
+
+.foto figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 0.5em;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+}
+
+Con esto el texto aparece en la parte inferior de la imagen con un fondo semitransparente.
+
+Si lo quieres en otra posición:
+
+/* Arriba */
+top: 0;
+
+/* Centro */
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+/* Esquina inferior derecha */
+bottom: 0;
+right: 0;
+width: auto;
+
+Ten en cuenta que H

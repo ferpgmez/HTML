@@ -1,0 +1,134 @@
+body {
+    background-color: #002266;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+ul li:hover {
+    background-color: #12444d;
+    color: #00ccff;
+    transform: scale(3);
+}
+
+ul #logo {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 0.5em;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+   text-shadow: 0  0 5px #fff,
+    0 0 10px #06b6d4,
+    0 0 20px #06b6d4,
+    0 0 30px #2b6772,
+    0 0 40px #2b7d8b,
+    0 0 50px #226774,
+    0 0 60px #19464e, 
+}
+
+
+.tablecontainer {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto 1rem auto;
+    overflow-x: auto;
+    width: 80%;
+    text-align: center;
+}
+
+
+.table {
+    border-collapse: separate;
+    margin: 0 .5rem 0 .5rem 0;
+    width: 100%;
+}
+
+.table thead {
+    background-color: #002266;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+
+thead tr th {
+    padding: 1.5rem;
+}
+
+thead tr img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+
+tbody td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #645c5c;
+    padding: 1.5rem;
+}
+
+tbody tr {
+    text-align: left;
+}
+
+tbody td img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+    
+
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+tbody tr:hover {
+    background-color: #d4d4d4;
+}
+
+.price {
+    font-weight: bold;  
+
+}
+
+.planpro {
+    background-color: rgba(0, 255, 255, 0.25);
+    color: #000000;
+}
